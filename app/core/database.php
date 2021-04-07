@@ -1,52 +1,73 @@
-<?php
-    class Database{
+<?php 
 
-        public static $con;
+Class Database
+{
 
-        public function __construct(){
-            try{
-                $string = DB_TYPE .  ":host=" . DB_HOST . ";dbname=" . DB_NAME;
-                self::$con = new PDO($string,DB_USER,DB_PASS);
-                //show(self::$con);
-            } catch (PDOException $e){
-                die($e->getMessage());
-            }
-        }
-        
-        public static function getInstance(){
-            if (self::$con) {
-                return self::$con;
-            }
-            return $instance = new self();
-        }
+	/*
+	*
+	* This is the database class
+	*/
+	public static $con;
 
-        //Read Database
-        public function read($query, $data = array()){
-            // menyiapkan statment
-            $stm = self::$con->prepare($query);
-            $result = $stm->execute();
+	public function __construct()
+	{
+		try{
+ 
+			$string = DB_TYPE . ":host=". DB_HOST .";dbname=". DB_NAME;
+			self::$con = new PDO($string,DB_USER,DB_PASS);
 
-            //fetch static value pdo
-            if ($result) {
-                $data = $stm->fetchAll(PDO::FETCH_OBJ);
-                if (is_array($data)) {
-                    return $data;
-                }
-            }
-            return false;
-        }
+		}catch (PDOException $e){
 
-        //Write Database
-        public function write($query, $data = array()){
-            // menyiapkan statment
-            $stm = self::$con->prepare($query);
-            $result = $stm->execute($data);
+			die($e->getMessage());
+		}
+	}
 
-            //fetch static value pdo
-            if ($result) {
-                    return true;
-            }
-            return false;
-        }
-    }
-?>
+	public static function getInstance()
+	{
+		if(self::$con){
+
+			return self::$con;
+		}
+
+		return $instance = new self();
+ 	}
+
+	/*
+	* read from database
+	*/
+	public function read($query,$data = array())
+	{
+
+		$stm = self::$con->prepare($query);
+		$result = $stm->execute($data);
+
+		if($result){
+			$data = $stm->fetchAll(PDO::FETCH_OBJ);
+			if(is_array($data) && count($data) > 0)
+			{
+				return $data;
+			}
+		}
+
+		return false;
+	}
+
+	/*
+	* write to database
+	*/
+	public function write($query,$data = array())
+	{
+
+		$stm = self::$con->prepare($query);
+		$result = $stm->execute($data);
+
+		if($result){
+			 
+			return true;
+ 		}
+
+		return false;
+	}
+
+ 
+}

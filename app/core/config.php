@@ -2,7 +2,7 @@
     define('WEBSITE_TITLE', 'STARISH TEAM');
 
     //Database
-    define('DB_NAME', 'starish_db');
+    define('DB_NAME', 'db_admin');
     define('DB_USER', 'root');
     define('DB_PASS', '');
     define('DB_TYPE', 'mysql');
