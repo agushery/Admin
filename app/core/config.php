@@ -1,21 +1,17 @@
-<?php 
+<?php
+    define('WEBSITE_TITLE', 'STARISH TEAM');
 
-define("WEBSITE_TITLE", 'STARISH TEAM');
+    //Database
+    define('DB_NAME', 'starish_db');
+    define('DB_USER', 'root');
+    define('DB_PASS', '');
+    define('DB_TYPE', 'mysql');
+    define('DB_HOST', 'localhost');
 
-//database name
-define('DB_NAME', "starish_db");
-define('DB_USER', "agushery");
-define('DB_PASS', "ganesha123");
-define('DB_TYPE', "mysql");
-define('DB_HOST', "localhost");
+    define('DEBUG', true);
 
-define('THEME','starish/');
-
-define('DEBUG', true);
-
-if(DEBUG){
-
-	ini_set('display_errors', 1);
-}else{
-	ini_set('display_errors', 0);
-}
+    if (DEBUG) {
+        ini_set('display_errors', 1);
+    }else {
+        ini_set('display_errors', 2);
+    }

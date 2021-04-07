@@ -1,8 +1,8 @@
 <?php
-    class Home extends Controller{
+    class Register extends Controller{
         public function index()
         {   $data['page_title'] = "Login";
-            $this->view("index", $data);
+            $this->view("register", $data);
         }
     }
 ?>

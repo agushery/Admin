@@ -17,7 +17,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
-  <title>Argon Dashboard - Free Dashboard for Bootstrap 4</title>
+  <title>Admin | <?=$data['page_title']?></title>
   <!-- Favicon -->
   <link rel="icon" href="<?= ASSETS ?>/img/brand/favicon.png" type="image/png">
   <!-- Fonts -->
@@ -43,7 +43,7 @@
         <div class="navbar-collapse-header">
           <div class="row">
             <div class="col-6 collapse-brand">
-              <a href="dashboard.html">
+              <a href="index">
                 <img src="<?= ASSETS ?>/img/brand/blue.png">
               </a>
             </div>
@@ -57,12 +57,12 @@
         </div>
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a href="dashboard.html" class="nav-link">
+            <a href="index" class="nav-link">
               <span class="nav-link-inner--text">Dashboard</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="login.html" class="nav-link">
+            <a href="login" class="nav-link">
               <span class="nav-link-inner--text">Login</span>
             </a>
           </li>
@@ -96,14 +96,6 @@
             <a class="nav-link nav-link-icon" href="https://github.com/creativetimofficial" target="_blank" data-toggle="tooltip" data-original-title="Star us on Github">
               <i class="fab fa-github"></i>
               <span class="nav-link-inner--text d-lg-none">Github</span>
-            </a>
-          </li>
-          <li class="nav-item d-none d-lg-block ml-lg-4">
-            <a href="https://www.creative-tim.com/product/argon-dashboard-pro?ref=ad_upgrade_pro" target="_blank" class="btn btn-neutral btn-icon">
-              <span class="btn-inner--icon">
-                <i class="fas fa-shopping-cart mr-2"></i>
-              </span>
-              <span class="nav-link-inner--text">Upgrade to PRO</span>
             </a>
           </li>
         </ul>

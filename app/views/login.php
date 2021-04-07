@@ -1,23 +1,13 @@
-<!--
-=========================================================
-* Argon Dashboard - v1.2.0
-=========================================================
-* Product Page: https://www.creative-tim.com/product/argon-dashboard
 
-* Copyright  Creative Tim (http://www.creative-tim.com)
-* Coded by www.creative-tim.com
-=========================================================
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
--->
 <!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
-  <meta name="author" content="Creative Tim">
-  <title>Argon Dashboard - Free Dashboard for Bootstrap 4</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Admin | <?=$data['page_title']?></title>
   <!-- Favicon -->
   <link rel="icon" href="<?= ASSETS ?>/img/brand/favicon.png" type="image/png">
   <!-- Fonts -->
@@ -33,7 +23,7 @@
   <!-- Navbar -->
   <nav id="navbar-main" class="navbar navbar-horizontal navbar-transparent navbar-main navbar-expand-lg navbar-light">
     <div class="container">
-      <a class="navbar-brand" href="dashboard.html">
+      <a class="navbar-brand" href="index">
         <img src="<?= ASSETS ?>/img/brand/white.png">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,12 +52,12 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="login.html" class="nav-link">
+            <a href="login" class="nav-link">
               <span class="nav-link-inner--text">Login</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="register.html" class="nav-link">
+            <a href="register" class="nav-link">
               <span class="nav-link-inner--text">Register</span>
             </a>
           </li>
@@ -96,14 +86,6 @@
             <a class="nav-link nav-link-icon" href="https://github.com/creativetimofficial" target="_blank" data-toggle="tooltip" data-original-title="Star us on Github">
               <i class="fab fa-github"></i>
               <span class="nav-link-inner--text d-lg-none">Github</span>
-            </a>
-          </li>
-          <li class="nav-item d-none d-lg-block ml-lg-4">
-            <a href="https://www.creative-tim.com/product/argon-dashboard-pro?ref=ad_upgrade_pro" target="_blank" class="btn btn-neutral btn-icon">
-              <span class="btn-inner--icon">
-                <i class="fas fa-shopping-cart mr-2"></i>
-              </span>
-              <span class="nav-link-inner--text">Upgrade to PRO</span>
             </a>
           </li>
         </ul>

@@ -1,8 +1,8 @@
 <?php
-    class Home extends Controller{
+    class Login extends Controller{
         public function index()
         {   $data['page_title'] = "Login";
-            $this->view("index", $data);
+            $this->view("login", $data);
         }
     }
 ?>
