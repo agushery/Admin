@@ -1,4 +1,5 @@
 <?php $this->view('header', $data);?>
+<?=$_SESSION['user_url']?>
     <!-- Header -->
     <div class="header bg-primary pb-6">
       <div class="container-fluid">

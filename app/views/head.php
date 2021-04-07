@@ -23,7 +23,7 @@
   <nav id="navbar-main" class="navbar navbar-horizontal navbar-transparent navbar-main navbar-expand-lg navbar-light">
     <div class="container">
       <a class="navbar-brand" href="index">
-        <img src="<?= ASSETS ?>/img/brand/white.png">
+        <img src="<?= ASSETS ?>/img/brand/logo.svg">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -46,7 +46,7 @@
         </div>
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a href="index" class="nav-link">
+            <a href="home" class="nav-link">
               <span class="nav-link-inner--text">Dashboard</span>
             </a>
           </li>

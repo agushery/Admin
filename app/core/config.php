@@ -1,10 +1,10 @@
 <?php
-    define('WEBSITE_TITLE', 'STARISH TEAM');
+    define('WEBSITE_TITLE', 'Electronic Citizen Records');
 
     //Database
     define('DB_NAME', 'db_admin');
-    define('DB_USER', 'root');
-    define('DB_PASS', '');
+    define('DB_USER', 'agushery');
+    define('DB_PASS', 'ganesha123');
     define('DB_TYPE', 'mysql');
     define('DB_HOST', 'localhost');
 

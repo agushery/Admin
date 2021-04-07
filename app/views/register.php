@@ -9,6 +9,7 @@
             <div class="col-xl-5 col-lg-6 col-md-8 px-5">
               <h1 class="text-white">Create an account</h1>
               <p class="text-lead text-white">Keep smile. You don't have all problems on earth.</p>
+              <h2><?php check_error() ?></h2>
             </div>
           </div>
         </div>
