@@ -1,7 +1,8 @@
 <?php 
 
-include "../app/core/config.php";
-include "../app/core/controller.php";
-include "../app/core/function.php";
-include "../app/core/database.php";
-include "../app/core/app.php";
+include "../app/core/Flasher.php";
+include "../app/core/Config.php";
+include "../app/core/Controller.php";
+// include "../app/core/function.php";
+include "../app/core/Database.php";
+include "../app/core/App.php";
