@@ -3,7 +3,7 @@ $(function(){
     $('.showAddModal').on('click', function(){
         $('#exampleModalLabel').html('Add Data Citizen');
         $('.modal-footer button[type=submit]').html('Add Data');
-        $('.modal-body').attr('action', 'http://localhost/Sertifikasi/public/data/add');
+        $('.action').attr('action', 'http://localhost/Sertifikasi/public/data/add');
         $('#nik_warga').val('');
         $('#nama_warga').val('');
         $('#tempat_lahir_warga').val('');
@@ -29,7 +29,7 @@ $(function(){
     $('.showEditModal').on('click', function(){
         $('#exampleModalLabel').html('Edit Data Citizen');
         $('.modal-footer button[type=submit]').html('Edit Data');
-        $('.modal-body').attr('action', 'http://localhost/Sertifikasi/public/data/edit');
+        $('#action').attr('action', 'http://localhost/Sertifikasi/public/data/edit');
 
         const url_warga = $(this).data('url_warga');
         $.ajax({

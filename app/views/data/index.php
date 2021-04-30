@@ -8,7 +8,7 @@
         <div class="col-lg-6">
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-primary showAddModal" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Launch demo modal
+                Add Data
             </button>
             <br><br>
             <h3>Citizen Records</h3>
@@ -16,9 +16,9 @@
                 <?php foreach ($data['ctz'] as $ctz) : ?>
                     <li class="list-group-item">
                         <?= $ctz['nama_warga']; ?>
-                        <a href="<?= ROOT; ?>data/delete/<?= $ctz['url_warga'] ?>" class="badge badge-danger float-right ml-1" onclick="return confirm('Want to delete this data ?')">Delete</a>
-                        <a href="<?= ROOT; ?>data/edit/<?= $ctz['url_warga'] ?>" class="badge badge-warning float-right ml-1 showEditModal" data-bs-toggle="modal" data-bs-target="#exampleModal" data-url_warga="<?= $ctz['url_warga'] ?>">Edit</a>
-                        <a href="<?= ROOT; ?>data/detail/<?= $ctz['url_warga'] ?>" class="badge badge-primary float-right ml-1">Detail</a>
+                        <a href="<?= ROOT; ?>data/delete/<?= $ctz['url_warga'] ?>" class="badge bg-danger float-end ms-1" onclick="return confirm('Want to delete this data ?')">Delete</a>
+                        <a href="<?= ROOT; ?>data/edit/<?= $ctz['url_warga'] ?>" class="badge bg-secondary float-end ms-1 showEditModal" data-bs-toggle="modal" data-bs-target="#exampleModal" data-url_warga="<?= $ctz['url_warga'] ?>">Edit</a>
+                        <a href="<?= ROOT; ?>data/detail/<?= $ctz['url_warga'] ?>" class="badge bg-dark float-end ms-1">Detail</a>
                     </li>
                 <?php endforeach; ?>
             </ul>
@@ -35,7 +35,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-            <form action="<?=ROOT;?>data/add" method="post">
+            <form id="action" action="<?=ROOT;?>data/add" method="post">
                         <input type="hidden" name="url_warga" id="url_warga">
                         <h3>A. Data Pribadi</h3>
                         <table class="table table-striped table-middle">
