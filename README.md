@@ -5,4 +5,7 @@ This project is designed to qualify for the programmer's scheme certification
 ![Screenshot_20210505_063329](https://user-images.githubusercontent.com/63402638/117078587-ba622700-ad6c-11eb-8169-18c9465b10f0.png)
 
 ## Dashboard Page
-![Screenshot_20210430_223457](https://user-images.githubusercontent.com/63402638/116710577-7e456400-aa04-11eb-9c08-ba24459b216e.png)
+
+![Screenshot_20210505_064207](https://user-images.githubusercontent.com/63402638/117078735-0ca34800-ad6d-11eb-9ca6-acef1ea9329a.png)
+
+
