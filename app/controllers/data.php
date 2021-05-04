@@ -1,5 +1,11 @@
 <?php
     class Data extends Controller{
+        public function __construct()
+        {
+            if(!isset($_SESSION['name'])){
+                header('Location:' . ROOT . 'login');
+            }
+        }
         public function index()
         {
             //model

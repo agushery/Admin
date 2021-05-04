@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="<?=ROOT;?>image/favicon.png" type="image/png">
     <title>Page <?= $data['title'];?> | <?= WEBSITE_TITLE;?></title>
     <link rel="stylesheet" href="<?=ROOT;?>css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?=ROOT;?>css/login.css">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
@@ -25,6 +27,11 @@
         <li class="nav-item">
             <a class="nav-link" href="<?=ROOT;?>about">About</a>
         </li>
+        <?php if (isset($_SESSION['name'])){?>
+            <li class="nav-item">
+                <a class="nav-link" href="<?=ROOT;?>login/logout" >logout</a>
+            </li>
+        <?php }?>
         </ul>
         </div>
     </div>
