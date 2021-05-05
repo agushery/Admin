@@ -57,7 +57,7 @@
                             <tr>
                                 <th>Tanggal Lahir</th>
                                 <td>:</td>
-                                <td><input type="text" class="form-control datepicker" id="tanggal_lahir_warga" name="tanggal_lahir_warga" required placeholder="YYYY-MM-DD"></td>
+                                <td><input type="date" class="form-control datepicker" id="tanggal_lahir_warga date-picker-example" name="tanggal_lahir_warga" required placeholder="Select Date"></td>
                             </tr>
                             <tr>
                                 <th>Jenis Kelamin</th>

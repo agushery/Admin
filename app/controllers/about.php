@@ -20,9 +20,6 @@
         }
         public function page()
         {
-            if(!isset($_SESSION['name'])){
-                header('Location:' . ROOT . 'login');
-            }
             $this->view('templates/header');
             $this->view('about/page');
             $this->view('templates/footer');

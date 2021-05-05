@@ -62,3 +62,5 @@ $(function(){
         });
     });
 });
+
+$('.date-picker-example').pickdate();
