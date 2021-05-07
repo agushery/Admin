@@ -61,6 +61,49 @@ $(function(){
             }
         });
     });
+
+    // HOTEL
+
+    $('.showAddModalHotel').on('click', function(){
+        $('#exampleModalLabel').html('Add Data Hotel');
+        $('.modal-footer button[type=submit]').html('Add Data');
+        $('.action').attr('action', 'http://localhost/Sertifikasi/public/hotel/add');
+        $('#id_hotel').val('');
+        $('#nama_hotel').val('');
+        $('#jenis_hotel').val('');
+        $('#nama_manager').val('');
+        $('#alamat').val('');
+        $('#no_tlp').val('');
+        $('#jumlah_kamar').val('');
+        $('#tgl_mulai_operasi').val('');
+        $('#id_hotel').val('');
+    });
+
+    $('.showEditModalHotel').on('click', function(){
+        $('#exampleModalLabel').html('Edit Data Hotel');
+        $('.modal-footer button[type=submit]').html('Edit Data');
+        $('#action').attr('action', 'http://localhost/Sertifikasi/public/hotel/edit');
+
+        const id_hotel = $(this).data('id_hotel');
+        $.ajax({
+            url: 'http://localhost/Sertifikasi/public/hotel/getEdit',
+            data: {id_hotel : id_hotel},
+            method: 'post',
+            dataType: 'json',
+            success: function(data){
+                $('#nama_hotel').val(data.nama_hotel);
+                $('#jenis_hotel').val(data.jenis_hotel);
+                $('#nama_manager').val(data.nama_manager);
+                $('#alamat').val(data.alamat);
+                $('#no_tlp').val(data.no_tlp);
+                $('#jumlah_kamar').val(data.jumlah_kamar);
+                $('#alamat_warga').val(data.alamat_warga);
+                $('#tgl_mulai_operasi').val(data.tgl_mulai_operasi);
+                $('#id_hotel').val(data.id_hotel);
+            }
+        });
+    });
+
+    $('.date-picker-example').pickdate();
 });
 
-$('.date-picker-example').pickdate();

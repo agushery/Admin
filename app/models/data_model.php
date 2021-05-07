@@ -18,7 +18,7 @@ class Data_model
 
     public function getCitizenByURL($url_warga)
     {
-        $this->db->query("SELECT * FROM warga WHERE url_warga = :url_warga");
+        $this->db->query('SELECT * FROM '. $this->table . ' WHERE url_warga = :url_warga');
         $this->db->bind('url_warga', $url_warga);
         return $this->db->single();
     }
@@ -75,7 +75,7 @@ class Data_model
 
     public function deleteData($url_warga)
     {
-        $query = "DELETE FROM warga WHERE url_warga = :url_warga";
+        $query = "DELETE FROM ". $this->table ." WHERE url_warga = :url_warga";
         $this->db->query($query);
         $this->db->bind('url_warga', $url_warga);
 
